@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%     Language Science Press Master File       %%%
+%%%         follow the instructions below        %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+% Everything following a % is ignored
+% Some lines start with %. Remove the % to include them
+
+\documentclass[output=book,
+  nonflat,
+  modfonts 
+		  ]{langsci/langscibook}    
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%          additional packages                 %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% put all additional commands you need in the 
+% following files. {I}f you do not know what this might 
+% mean, you can safely ignore this section
+
+\input{localmetadata.tex}
+\input{localpackages.tex}
+\input{localhyphenation.tex}
+\bibliography{localbibliography} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%             Frontmatter                      %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{document}     
+\input{localcommands.tex} 
+ 
+
+\maketitle                
+\frontmatter
+% %% uncomment if you have preface and/or acknowledgements
+
+\currentpdfbookmark{Contents}{name} % adds a PDF bookmark
+\tableofcontents
+\includepdf[pages=-,scale=1.1, pagecommand={\thispagestyle{plain}}]{Preface.pdf}
+\includepdf[pages=-, scale=1.1,pagecommand={\thispagestyle{plain}}]{Acknowledgements.pdf}
+% \include{chapters/abbreviations} 
+\mainmatter   
+\part{Introduction}
+\includepdf[pages=-, scale=1.3,pagecommand={\thispagestyle{plain}}]{Intro p 1-2.pdf}
+\includepdf[pages=-, scale=1.3, pagecommand={\thispagestyle{plain}}]{Intro p 3.pdf}
+
+\begin{figure}[p]
+ \includegraphics[width=\textwidth]{ikmap.png}
+\\
+{Figure 1.1: The language area from an `Ik-centric' perspective}
+\end{figure}
+
+\includepdf[pages=-,scale=1.3, pagecommand={\thispagestyle{plain}}]{Intro p 5-6.pdf}
+\includepdf[pages=-, scale=1.3,pagecommand={\thispagestyle{plain}}]{Intro p 7.pdf}
+\includepdf[pages=-,scale=1.3, pagecommand={\thispagestyle{plain}}]{Intro p 8.pdf}
+
+
+  
+
+\newcommand{\headrulewidth}{0pt}
+\setlength{\columnsep}{3em}
+\setlength{\parindent}{0pt}
+
+\part{Ik-English dictionary}
+\renewcommand{\lsgloss}[1]{} 
+ 
+
+\renewcommand{\citationform}[1]{\textbf{#1}\markboth{#1}{#1}} 
+\include{chapters/dictionary} 
+
+\renewcommand{\lsgloss}[1]{\textbf{#1}\markboth{#1}{#1}}
+\renewcommand{\definition}[1]{\textbf{#1}\markboth{#1}{#1}}
+\renewcommand{\citationform}[1]{{#1}}
+\renewcommand{\homograph}[1]{\textsuperscript{#1}}
+
+
+
+% \newpage
+\part{English-Ik reversal index} 
+\begin{multicols}{2}
+\include{chapters/inverteddictionary}  
+\end{multicols}
+% 
+\part{Grammar sketch}
+\includepdf[pages=-,scale=1.5, pagecommand={\thispagestyle{plain}}]{Grammar sketch p 1.pdf}
+\includepdf[pages=-,scale=1.5, pagecommand={\thispagestyle{plain}}]{Rest of grammar sketch.pdf}
+
+% % copy the lines above and adapt as necessary
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%             Backmatter                       %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{localseealso.tex} 
+% There is normally no need to change the backmatter section
+% \input{backmatter.tex} 
+\end{document} 
+ 

@@ -1,0 +1,132 @@
+% =====================================
+% Circle
+% =====================================
+
+   \def\Circled#1{\raisebox{.7pt}{\textcircled{\raisebox{-.8pt} 
+{{\scriptsize #1}}}}}
+ \def\Circledd#1{\raisebox{.6pt}{\textcircled{\raisebox{-.8pt} 
+{{\scriptsize #1}}}}}
+% =====================================
+
+
+
+\newenvironment{letter}[1]{\phantomsection  %
+\addcontentsline{toc}{chapter}{#1}%
+\begin{multicols}{2}[%
+% \addvspace{1.5\baselineskip}%
+\scalebox{1.5}{\bfseries\Huge #1}%
+% \hline
+% \addvspace{.1\baselineskip}
+% \hline
+% \addvspace{1\baselineskip}
+]%
+}%
+{%
+\end{multicols}%
+}
+
+
+% =====================================
+% Class based parsing
+% =====================================
+% \newenvironment{newentry}{\hspace*{.05\textwidth}
+% % % 			  \begin{minipage}{.44\textwidth}%
+% 			  \setlength{\parindent}{-.05\textwidth}%
+% 			  }%
+% 			  {%
+% % 			  \end{minipage}
+% 			  \setlength{\parindent}{.00\textwidth}
+% 			  }
+\newcommand{\newentry}{\par\smallskip}
+\newcommand{\homograph}[1]{\hspace*{-1.5mm}%
+			  \parbox{1.5mm}{\raggedleft \textsuperscript{#1}}}%
+% 			  \parbox[1mm]{%
+% 				\begin{tabular}{r}#1\end{tabular}%
+% 			  }%
+% 			  }}
+\newcommand{\ipa}[1]{{ [#1]}}
+% \newcommand{\hyperipa}[2]{{[\hypertarget{#1}{#2}]}}
+\newcommand{\pos}[1]{ {\itshape #1}.}
+\newcommand{\synpos}[1]{ {\itshape #1}.}
+\newcommand{\headword}[1]{{\bfseries #1}\markboth{#1}{#1}}
+% % \newcommand{\hyperheadword}[2]{{\bfseries \hypertarget{#1}{#2}}\markboth{#2}{#2}}
+\newcommand{\sensenr}[1]{ {\itshape\large  #1}}
+\newcommand{\definition}[1]{ {#1}}
+\newcommand{\hyperdefinition}[2]{\hypertarget{#1}{#2}}
+\newcommand{\lsgloss}[1]{ {#1}.}
+% \newcommand{\exnr}[1]{{(#1)}}
+\newcommand{\startexample}{ •}
+\newcommand{\exnr}[1]{}
+\newcommand{\vernacular}[1]{{}}
+\newcommand{\hypervernacular}[2]{\hypertarget{}{ \slshape }}
+\newcommand{\modvernacular}[1]{{ \slshape #1}}
+\newcommand{\hypermodvernacular}[2]{{ \slshape\mdseries \hypertarget{#1}{#2}}}
+\newcommand{\trs}[1]{{ #1}}
+\newcommand{\hypertrs}[2]{\hypertarget{#1}{ #2}}
+\newcommand{\sciname}[1]{{ (\textit{#1})}.}
+\newcommand{\usage}[1]{ [\textit{#1}].}
+\newcommand{\plural}[1]{ \textit{pl.} \textbf{#1}.}
+\newcommand{\literalmeaning}[1]{ \textit{lit.} #1}
+\newcommand{\JBtype}[1]{$\xrightarrow{\makebox[.4cm]{\tiny #1}}$}
+\newcommand{\error}[1]{{\color{red}{#1}}}
+\newcommand{\etymology}{}
+\newcommand{\etymologyform}[1]{{ <\textit{#1}}}
+\newcommand{\etymologysrc}[1]{ (#1)}
+\newcommand{\etymologygloss}[1]{ `#1'}
+% % \newcommand{\fixme}{\todo[inline]{FIXME}}
+% % \newcommand{\fixpos}{{\color{orange}{pos?}}}
+\newcommand{\fixpron}{{\color{green}{[IPA?]}}}
+\renewcommand{\fixpron}{}
+% % \newcommand{\fixdef}{{\color{red}{definition?}}}
+
+\newcommand{\typeant}[1]{ \textit{Ant:} \textbf{#1} }
+% \newcommand{\typeasmlvar}[1]{#1}
+\newcommand{\typecf}[1]{ \textit{Cf:} \textbf{#1} }
+\newcommand{\typecntrof}[1]{ (\textit{cont. var.} \textbf{#1}) }
+\newcommand{\typecntrvarof}[1]{ (\textit{cont. var. of} \textbf{#1}) }
+\newcommand{\typedialvarGu}[1]{ (\textit{Gu. var.} \textbf{#1}) }
+\newcommand{\typedialvarMo}[1]{ (\textit{Mo. var.} \textbf{#1}) }
+\newcommand{\typedialvarofGu}[1]{  (\textit{Gu. var. of} \textbf{#1}) }
+\newcommand{\typedialvarofMo}[1]{  (\textit{Mo. var. of} \textbf{#1}) }
+\newcommand{\typeempty}[1]{#1}
+\newcommand{\typeEnum}[1]{ \textit{Enum:} \textbf{#1} }
+% \newcommand{\typefrgnvar}[1]{#1}
+% \newcommand{\typefrgnvarof}[1]{#1}
+% \newcommand{\typeinflvar}[1]{#1}
+% \newcommand{\typeinflvarof}[1]{#1}
+\newcommand{\typePl}[1]{ (\textit{Pl. var.} \textbf{#1})}
+\newcommand{\typesyn}[1]{ \textit{Syn:} \textbf{#1} }
+\newcommand{\typeSynT}[1]{ \textit{SynT:} \textbf{#1} }
+\newcommand{\typevar}[1]{ (\textit{var.} \textbf{#1}) }
+\newcommand{\typevarof}[1]{ (\textit{var. of} \textbf{#1}) }
+\newcommand{\definitioncloser}{.}
+\newcommand{\etymologycloser}{.}
+
+ 
+
+\newcommand{\higha}{{$^{\text{a}}$}}
+\newcommand{\highe}{{$^{\text{e}}$}}
+\newcommand{\highE}{{$^{\text{ɛ}}$}}
+\newcommand{\highI}{{$^{\text{ɨ}}$}}
+\newcommand{\higho}{{$^{\text{o}}$}}
+\newcommand{\highO}{{$^{\text{ɔ}}$}}
+\newcommand{\highu}{{$^{\text{u}}$}}
+\newcommand{\highU}{{$^{\text{ʊ}}$}}
+
+\newcommand{\glosses}[1]{}
+\newcommand{\citationform}[1]{\markboth{#1}{#1}\textbf{#1}.~}
+\newcommand{\lexicalunit}[1]{ (#1) }
+
+ 
+
+
+
+\renewcommand{\root}[1]{ (#1) }
+\newcommand{\scientificname}[1]{\textit{#1}} 
+\newcommand{\note}[1]{#1} 
+% \newcommand{\higha}{{{{a}}}}
+% \newcommand{\highe}{{{{e}}}}
+% \newcommand{\highE}{{{{ɛ}}}}
+% \newcommand{\highI}{{{​{ɪ}}}}
+% \newcommand{\higho}{{{{o}}}}
+% \newcommand{\highu}{{{{u}}}}

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- See http://code.google.com/p/lift-standard for more information on the format used here. -->
+<lift producer="SIL.FLEx 8.1.3.42053" version="0.13">
+  <header>
+    <ranges>
+      <range id="dialect" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="etymology" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="grammatical-info" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="lexical-relation" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="note-type" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="paradigm" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="reversal-type" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="semantic-domain-ddp4" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="status" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="users" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="location" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <!-- The following ranges are produced by FieldWorks Language Explorer, and are not part of the LIFT standard. -->
+      <range id="anthro-code" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="translation-type" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <!-- The parts of speech are duplicated in another range because derivational affixes require a "From" PartOfSpeech as well as a "To" PartOfSpeech. -->
+      <range id="from-part-of-speech" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="morph-type" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="exception-feature" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="inflection-feature" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="inflection-feature-type" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="mood-feature-value" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="semrole-feature-value" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="pers-feature-value" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="transitivity-feature-value" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="asp-feature-value" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="case-feature-value" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="ten-feature-value" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="num-feature-value" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="voice-feature-value" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="Verb-slot" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+      <range id="do-not-publish-in" href="file://C:/Users/Terrill/Desktop/Desktop.lift-ranges" />
+    </ranges>
+    <fields>
+      <field tag="cv-pattern">
+        <form lang="en">
+          <text>This records the syllable pattern for a LexPronunciation in FieldWorks.</text>
+        </form>
+      </field>
+      <field tag="tone">
+        <form lang="en">
+          <text>This records the tone information for a LexPronunciation in FieldWorks.</text>
+        </form>
+      </field>
+      <field tag="comment">
+        <form lang="en">
+          <text>This records a comment (note) in a LexEtymology in FieldWorks.</text>
+        </form>
+      </field>
+      <field tag="import-residue">
+        <form lang="en">
+          <text>This records residue left over from importing a standard format file into FieldWorks (or LinguaLinks).</text>
+        </form>
+      </field>
+      <field tag="literal-meaning">
+        <form lang="en">
+          <text>This field is used to store a literal meaning of the entry. Typically, this field is necessary only for a compound or an idiom where the meaning of the whole is different from the sum of its parts.</text>
+        </form>
+      </field>
+      <field tag="summary-definition">
+        <form lang="en">
+          <text>A summary definition (located at the entry level in the Entry pane) is a general definition summarizing all the senses of a primary entry. It has no theoretical value; its use is solely pragmatic.</text>
+        </form>
+      </field>
+      <field tag="scientific-name">
+        <form lang="en">
+          <text>This field stores the scientific name pertinent to the current sense.</text>
+        </form>
+      </field>
+      <field tag="ATR value">
+        <form lang="en">
+          <text></text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsAnal</text>
+        </form>
+      </field>
+      <field tag="ATR value1">
+        <form lang="en">
+          <text></text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsAnal</text>
+        </form>
+      </field>
+      <field tag="Karamojong">
+        <form lang="en">
+          <text>Use this field to give a Karamojong gloss.</text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsVern</text>
+        </form>
+      </field>
+      <field tag="Karamojong1">
+        <form lang="en">
+          <text>Use this field to give a Karamojong gloss.</text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsVern</text>
+        </form>
+      </field>
+      <field tag="New Custom Field">
+        <form lang="en">
+          <text></text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsAnal</text>
+        </form>
+      </field>
+      <field tag="New Custom Field1">
+        <form lang="en">
+          <text></text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsAnal</text>
+        </form>
+      </field>
+      <field tag="Plural">
+        <form lang="en">
+          <text></text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsVern</text>
+        </form>
+      </field>
+      <field tag="Plural1">
+        <form lang="en">
+          <text></text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsVern</text>
+        </form>
+      </field>
+      <field tag="Root">
+        <form lang="en">
+          <text>Use this field to...</text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsVern</text>
+        </form>
+      </field>
+      <field tag="Root1">
+        <form lang="en">
+          <text>Use this field to...</text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsVern</text>
+        </form>
+      </field>
+      <field tag="Swahili">
+        <form lang="en">
+          <text>Use this field to give a Swahili gloss.</text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsAnal</text>
+        </form>
+      </field>
+      <field tag="Swahili1">
+        <form lang="en">
+          <text>Use this field to give a Swahili gloss.</text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsAnal</text>
+        </form>
+      </field>
+      <field tag="UF plural">
+        <form lang="en">
+          <text></text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsVern</text>
+        </form>
+      </field>
+      <field tag="UF plural1">
+        <form lang="en">
+          <text></text>
+        </form>
+        <form lang="qaa-x-spec">
+          <text>Class=LexEntry; Type=String; WsSelector=kwsVern</text>
+        </form>
+      </field>
+    </fields>
+  </header>
+  <entry dateCreated="2009-11-27T17:28:22Z" dateModified="2016-05-24T09:45:36Z" id="itsenes_001dd32a-8db3-4dcb-a70d-a80d372bdff3" guid="001dd32a-8db3-4dcb-a70d-a80d372bdff3">
+    <lexical-unit>
+      <form lang="ikx-fonipa">
+        <text>itsenesí-</text>
+      </form>
+    </lexical-unit>
+    <trait name="morph-type" value="root" />
+    <citation>
+      <form lang="ikx-fonipa">
+        <text>itsenes</text>
+      </form>
+    </citation>
+    <etymology type="borrowed" source="UNKNOWN">
+      <field type="comment">
+        <form lang="en">
+          <text>Cf. with ɪtsán-.</text>
+        </form>
+      </field>
+    </etymology>
+    <pronunciation>
+      <field type="cv-pattern">
+        <form lang="en">
+          <text>VCVCVCV</text>
+        </form>
+      </field>
+      <field type="tone">
+        <form lang="en">
+          <text>LLLH</text>
+        </form>
+      </field>
+    </pronunciation>
+    <field type="ATR value">
+      <form lang="en">
+        <text>+</text>
+      </form>
+    </field>
+    <field type="New Custom Field">
+      <form lang="en">
+        <text>x</text>
+      </form>
+    </field>
+    <field type="Root">
+      <form lang="ikx-fonipa">
+        <text>itsén-</text>
+      </form>
+    </field>
+    <sense id="f0eb4eb2-b669-472e-9536-a6e6b85a27c8" order="0">
+      <grammatical-info value="Verb"></grammatical-info>
+      <gloss lang="en">
+        <text>beg</text>
+      </gloss>
+      <definition>
+        <form lang="en">
+          <text>to beg</text>
+        </form>
+      </definition>
+      <trait name="semantic-domain-ddp4" value="6.8.3.4 Beg" />
+    </sense>
+    <sense id="fdbb52de-cb50-4ede-91e9-7cef2a10ed33" order="1">
+      <grammatical-info value="Verb"></grammatical-info>
+      <gloss lang="en">
+        <text>curse</text>
+      </gloss>
+      <definition>
+        <form lang="en">
+          <text>to curse</text>
+        </form>
+      </definition>
+      <example>
+        <form lang="ikx-fonipa">
+          <text>Itsenosídǃ</text>
+        </form>
+        <translation type="Free translation">
+          <form lang="en">
+            <text>You are cursed!</text>
+          </form>
+        </translation>
+      </example>
+      <trait name="semantic-domain-ddp4" value="4.9.4.4 Curse" />
+    </sense>
+  </entry>
+  <entry dateCreated="2015-12-30T15:12:36Z" dateModified="2016-05-30T07:29:09Z" id="ilététòòn_002276f9-f0e6-4c65-a41c-2acfe8bef828" guid="002276f9-f0e6-4c65-a41c-2acfe8bef828">
+    <lexical-unit>
+      <form lang="ikx-fonipa">
+        <text>ilététòònì-/ilététa-</text>
+      </form>
+    </lexical-unit>
+    <trait name="morph-type" value="root" />
+    <citation>
+      <form lang="ikx-fonipa">
+        <text>ilététòòn</text>
+      </form>
+    </citation>
+    <pronunciation>
+      <field type="cv-pattern">
+        <form lang="en">
+          <text>VCVCVCVVCV</text>
+        </form>
+      </field>
+      <field type="tone">
+        <form lang="en">
+          <text>LHHLLL</text>
+        </form>
+      </field>
+    </pronunciation>
+    <field type="ATR value">
+      <form lang="en">
+        <text>+</text>
+      </form>
+    </field>
+    <field type="New Custom Field">
+      <form lang="en">
+        <text>x</text>
+      </form>
+    </field>
+    <field type="Root">
+      <form lang="ikx-fonipa">
+        <text>ilététa-</text>
+      </form>
+    </field>
+    <sense id="8566e84a-9a31-4d8b-980f-cd89948d2996">
+      <grammatical-info value="Verb"></grammatical-info>
+      <gloss lang="en">
+        <text>exposed;left in the open;unprotected</text>
+      </gloss>
+      <definition>
+        <form lang="en">
+          <text>to be exposed, left out in the open, unprotected</text>
+        </form>
+      </definition>
+      <example>
+        <form lang="ikx-fonipa">
+          <text>Ógoini oŋoria ilététáátikᵉ.</text>
+        </form>
+        <translation type="Free translation">
+          <form lang="en">
+            <text>And they left the elephants out in the open.</text>
+          </form>
+        </translation>
+      </example>
+    </sense>
+  </entry>
+  <entry dateCreated="2009-11-27T17:28:26Z" dateModified="2016-04-29T14:39:57Z" id="toɗúón_0026ad92-6534-44fd-96a2-732823a01f8e" guid="0026ad92-6534-44fd-96a2-732823a01f8e">
+    <lexical-unit>
+      <form lang="ikx-fonipa">
+        <text>toɗúónì-</text>
+      </form>
+    </lexical-unit>
+    <trait name="morph-type" value="root" />
+    <citation>
+      <form lang="ikx-fonipa">
+        <text>toɗúón</text>
+      </form>
+    </citation>
+    <pronunciation>
+      <field type="cv-pattern">
+        <form lang="en">
+          <text>CVCVVCV</text>
+        </form>
+      </field>
+      <field type="tone">
+        <form lang="en">
+          <text>LHHL</text>
+        </form>
+      </field>
+    </pronunciation>
+    <field type="ATR value">
+      <form lang="en">
+        <text>+</text>
+      </form>
+    </field>
+    <field type="New Custom Field">
+      <form lang="en">
+        <text>x</text>
+      </form>
+    </field>
+    <field type="Root">
+      <form lang="ikx-fonipa">
+        <text>toɗú-</text>
+      </form>
+    </field>
+    <sense id="5162bc69-21c8-4ba4-9692-137a32fa7d2b" order="0">
+      <grammatical-info value="Verb"></grammatical-info>
+      <gloss lang="en">
+        <text>blow up (explode);burst;erupt;explode</text>
+      </gloss>
+      <definition>
+        <form lang="en">
+          <text>to blow up, burst, erupt, explode</text>
+        </form>
+      </definition>
+      <trait name="semantic-domain-ddp4" value="6.6.2.9.1 Explode" />
+    </sense>
+    <sense id="45e56bb5-9c6c-4467-b19d-b3f779ecad3c" order="1">
+      <grammatical-info value="Verb"></grammatical-info>
+      <gloss lang="en">
+        <text>stop beating</text>
+      </gloss>
+      <definition>
+        <form lang="en">
+          <text>to stop beating (of the heart from fear)</text>
+        </form>
+      </definition>
+      <example>
+        <form lang="ikx-fonipa">
+          <text>Nesibesa amee loŋotee ni todetatie, toɗuyo gur-ed.</text>
+        </form>
+        <translation type="Free translation">
+          <form lang="en">
+            <text>When the person heard the enemies who were talking, his heart stopped.</text>
+          </form>
+        </translation>
+      </example>
+    </sense>
+  </entry>
+  <entry dateCreated="2009-11-27T17:28:27Z" dateModified="2016-06-01T11:45:30Z" id="zoonuƙotᵃ_003bcf5f-3d04-4858-a3a3-44c5a79bfed6" guid="003bcf5f-3d04-4858-a3a3-44c5a79bfed6">
+    <lexical-unit>
+      <form lang="ikx-fonipa">
+        <text>zoonuƙotí-/zeiƙot-</text>
+      </form>
+    </lexical-unit>
+    <trait name="morph-type" value="stem" />
+    <citation>
+      <form lang="ikx-fonipa">
+        <text>zoonuƙotᵃ</text>
+      </form>
+    </citation>
+    <note>
+      <form lang="en">
+        <text>See also iwánétòn.</text>
+      </form>
+    </note>
+    <pronunciation>
+      <field type="cv-pattern">
+        <form lang="en">
+          <text>CVVCVCVCV</text>
+        </form>
+      </field>
+      <field type="tone">
+        <form lang="en">
+          <text>LLLLH</text>
+        </form>
+      </field>
+    </pronunciation>
+    <field type="ATR value">
+      <form lang="en">
+        <text>+</text>
+      </form>
+    </field>
+    <field type="New Custom Field">
+      <form lang="en">
+        <text>x</text>
+      </form>
+    </field>
+    <field type="Root">
+      <form lang="ikx-fonipa">
+        <text>ze-</text>
+      </form>
+    </field>
+    <sense id="b351c9a0-7701-4eb3-a21c-e398b315eb7c" order="0">
+      <grammatical-info value="Verb"></grammatical-info>
+      <gloss lang="en">
+        <text>bigger (become);grow bigger</text>
+      </gloss>
+      <definition>
+        <form lang="en">
+          <text>to become bigger, grow bigger</text>
+        </form>
+      </definition>
+      <trait name="semantic-domain-ddp4" value="8.2 Big" />
+      <trait name="semantic-domain-ddp4" value="1.5.6 Growth of plants" />
+      <trait name="semantic-domain-ddp4" value="2.6.4.6 Grow, get bigger" />
+      <reversal type="en">
+        <form lang="en">
+          <text>grow</text>
+        </form>
+      </reversal>
+      <reversal type="en">
+        <form lang="en">
+          <text>bigger, become</text>
+        </form>
+      </reversal>
+    </sense>
+    <sense id="08d8c85d-38c0-4b4b-b07f-818b62b26e8c" order="1">
+      <grammatical-info value="Verb"></grammatical-info>
+      <gloss lang="en">
+        <text>broaden;widen</text>
+      </gloss>
+      <definition>
+        <form lang="en">
+          <text>to broaden, widen</text>
+        </form>
+      </definition>
+      <trait name="semantic-domain-ddp4" value="8.2.4 Wide" />
+    </sense>
+    <sense id="3405c173-55ce-4bf4-adf8-2dcc8541c6fe" order="2">
+      <grammatical-info value="Verb"></grammatical-info>
+      <gloss lang="en">
+        <text>age;grow in age;mature</text>
+      </gloss>
+      <definition>
+        <form lang="en">
+          <text>to age, grow in age, mature</text>
+        </form>
+      </definition>
+    </sense>
+  </entry>
+  <entry dateCreated="2009-11-27T17:28:25Z" dateModified="2016-04-18T13:50:39Z" id="ɲéɓeterí_003c50f5-9d59-4f88-81f3-a6a8f4485629" guid="003c50f5-9d59-4f88-81f3-a6a8f4485629">
+    <lexical-unit>
+      <form lang="ikx-fonipa">
+        <text>ɲéɓeteríì-</text>
+      </form>
+    </lexical-unit>
+    <trait name="morph-type" value="root" />
+    <citation>
+      <form lang="ikx-fonipa">
+        <text>ɲéɓeterí</text>
+      </form>
+    </citation>
+    <pronunciation>
+      <field type="cv-pattern">
+        <form lang="en">
+          <text>CVCVCVCVV</text>
+        </form>
+      </field>
+      <field type="tone">
+        <form lang="en">
+          <text>HLLHL</text>
+        </form>
+      </field>
+    </pronunciation>
+    <field type="ATR value">
+      <form lang="en">
+        <text>+</text>
+      </form>
+    </field>
+    <field type="New Custom Field">
+      <form lang="en">
+        <text>x</text>
+      </form>
+    </field>
+    <field type="Plural">
+      <form lang="ikx-fonipa">
+        <text>ɲéɓètèrìkᵃ</text>
+      </form>
+    </field>
+    <field type="Root">
+      <form lang="ikx-fonipa">
+        <text>ɲéɓeteríi-</text>
+      </form>
+    </field>
+    <field type="Swahili">
+      <form lang="en">
+        <text>beteri</text>
+      </form>
+    </field>
+    <field type="UF plural">
+      <form lang="ikx-fonipa">
+        <text>ɲéɓeterika-</text>
+      </form>
+    </field>
+    <sense id="a45be9c7-afd6-41f9-8f72-ea7c7935e7d6">
+      <grammatical-info value="Noun"></grammatical-info>
+      <gloss lang="en">
+        <text>battery</text>
+      </gloss>
+      <definition>
+        <form lang="en">
+          <text>battery</text>
+        </form>
+      </definition>
+      <trait name="semantic-domain-ddp4" value="6.6.8.1 Working with electricity" />
+    </sense>
+  </entry>
+</lift>
