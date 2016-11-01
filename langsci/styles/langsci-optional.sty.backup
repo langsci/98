@@ -203,24 +203,12 @@
   \settowidth{\LSPTmp}{#1}%
   % several boxes are need to assure that words with ascending and descending letters are underlined at the same 
   % level, leading to the impression of a continuous stroke
-  \parbox[t]{\LSPTmp}{ %restrict first box to the length of first argument
-      \settowidth{\LSPTmp}{#1#2} %inner box is larger than outerbox, so underlining will extend beyond length of outer box
-      %             align parbox to bottom
-      %              |           mbox to prevent hyphenation
-      \uline{\parbox[b]{\LSPTmp}{\mbox{#1#2}}}
+  \parbox[t]{\LSPTmp}{
+      \settowidth{\LSPTmp}{#1#2}
+      \uline{\parbox[b]{\LSPTmp}{\mbox{#1#2\vphantom{pflgdj}}}}
     }
 }
 
 \newcommand{\ule}[1]{%#1: stuff to underline, no extra length
   \ulp{#1}{}
   }
-  
-  
-\newoutputstream{colorfigures}
-\openoutputfile{\jobname.clr}{colorfigures}
-\addtostream{colorfigures}{Note the offset incurred by the frontmatter!}
-\newenvironment{colorfigure}{\begin{figure}\addtostream{colorfigures}{\thepage}}{\end{figure}} 
-
-\AtEndDocument{
- \closeoutputstream{colorfigures}
-}
