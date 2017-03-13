@@ -1,0 +1,28 @@
+
+
+\setcounter{page}{1}
+is an exception as it does not drop its final /t/ in the same environment:
+
+\begin{stylelsTableHeading}%%please move \begin{table} just above \begin{tabular
+\begin{table}
+\caption{3: Haplology in \textit{ŋat[25B?]t[254?]n }‘to run this way’}
+\label{tab:2}
+\end{table}\end{stylelsTableHeading}
+
+\begin{tabularx}{\textwidth}{XXXXX}
+\lsptoprule
+
+\textsc{1sg} & ŋat-[25B?]t-[268?] &  & ŋat-[25B?]t-[268?] & ‘I run this way.’\\
+\textsc{2sg} & ŋat-[25B?]t-[268?]d & → & ŋat-[25B?]{}-[268?]d & ‘You run this way.’\\
+\textsc{3sg} & ŋat-[25B?]t &  & ŋat-[25B?]t & ‘S/he runs this way.’\\
+\textsc{1pl.exc} & ŋat-[25B?]t-[268?]m &  & ŋat-[25B?]t-[268?]m & ‘We run this way.’\\
+\textsc{1pl.inc} & ŋat-[25B?]t-[268?]s[268?]n & → & ŋat-[25B?]{}-[268?]s[268?]n & ‘We all run this way.’\\
+\textsc{2pl} & ŋat-[25B?]t-[268?]t & → & ŋat-[25B?]{}-[268?]t & ‘You all run this way.’\\
+\textsc{3pl} & ŋat-[25B?]t-át &  & ŋat-[25B?]t-át & ‘They run this way.’\\
+\lspbottomrule
+\end{tabularx}
+A second example of haplology occurs when a verb root ending in
+
+
+\begin{verbatim}%%move bib entries to  localbibliography.bib
+\end{verbatim}

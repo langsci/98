@@ -11,7 +11,7 @@
 
 
 \newenvironment{letter}[1]{\phantomsection  %
-\addcontentsline{toc}{chapter}{#1}%
+\addcontentsline{toc}{section}{#1}%
 \begin{multicols}{2}[%
 % \addvspace{1.5\baselineskip}%
 \scalebox{1.5}{\bfseries\Huge #1}%
@@ -26,6 +26,8 @@
 }
 
 
+
+
 % =====================================
 % Class based parsing
 % =====================================
@@ -37,7 +39,9 @@
 % % 			  \end{minipage}
 % 			  \setlength{\parindent}{.00\textwidth}
 % 			  }
-\newcommand{\newentry}{\par\smallskip}
+
+\newcommand{\newentry}{\par\smallskip\hangindent=6pt} 
+ 
 \newcommand{\homograph}[1]{\hspace*{-1.5mm}%
 			  \parbox{1.5mm}{\raggedleft \textsuperscript{#1}}}%
 % 			  \parbox[1mm]{%
@@ -51,7 +55,8 @@
 \newcommand{\headword}[1]{{\bfseries #1}\markboth{#1}{#1}}
 % % \newcommand{\hyperheadword}[2]{{\bfseries \hypertarget{#1}{#2}}\markboth{#2}{#2}}
 \newcommand{\sensenr}[1]{ {\itshape\large  #1}}
-\newcommand{\definition}[1]{ {#1}}
+\newcommand{\definition}[1]{ {#1}. }
+\newcommand{\noperioddefinition}[1]{ {#1} }
 \newcommand{\hyperdefinition}[2]{\hypertarget{#1}{#2}}
 \newcommand{\lsgloss}[1]{ {#1}.}
 % \newcommand{\exnr}[1]{{(#1)}}
@@ -66,7 +71,7 @@
 \newcommand{\sciname}[1]{{ (\textit{#1})}.}
 \newcommand{\usage}[1]{ [\textit{#1}].}
 \newcommand{\plural}[1]{ \textit{pl.} \textbf{#1}.}
-\newcommand{\literalmeaning}[1]{ \textit{lit.} #1}
+\newcommand{\literalmeaning}[1]{ \textit{Lit.} `#1'. }
 \newcommand{\JBtype}[1]{$\xrightarrow{\makebox[.4cm]{\tiny #1}}$}
 \newcommand{\error}[1]{{\color{red}{#1}}}
 \newcommand{\etymology}{}
@@ -111,24 +116,56 @@
 \newcommand{\higho}{{$^{\text{o}}$}}
 \newcommand{\highO}{{$^{\text{ɔ}}$}}
 \newcommand{\highu}{{$^{\text{u}}$}}
-\newcommand{\highU}{{$^{\text{ʊ}}$}}
+\newcommand{\highU}{\textsf{{\hspace{.5pt}ᶶ}}}
+
+ 
+\newcommand{\ᵃ}{\textsf{{\hspace{.5pt}ᵃ}}}
+\newcommand{\ᵋ}{\textsf{{\hspace{.5pt}ᵋ}}} 
+\newcommand{\ᵉ}{\textsf{{\hspace{.1pt}ᵉ}}} 	
+\newcommand{\ⁱ}{{\raisebox{-.65mm}{{\textsuperscript{\sffamily\scriptsize i}}}}}
+\newcommand{\ᴵ}{\textsf{{\hspace{.5pt}ᴵ}}}
+\newcommand{\ᶤ}{\textsf{{\hspace{.5pt}ᶤ}}} 
+\newcommand{\ᵒ}{\textsf{{\hspace{.5pt}ᵒ}}}
+\newcommand{\ᵓ}{\textsf{{\hspace{.5pt}ᵓ}}}
+\newcommand{\ᵘ}{\textsf{{\hspace{.5pt}ᵘ}}}
+\newcommand{\ᶶ}{\textsf{{\hspace{.5pt}ᶶ}}}
+\newcommand{\ꜜ}{\textsf{ꜜ\hspace*{-2pt}}}
 
 \newcommand{\glosses}[1]{}
 \newcommand{\citationform}[1]{\markboth{#1}{#1}\textbf{#1}.~}
 \newcommand{\lexicalunit}[1]{ (#1) }
+\newcommand{\nobreaklexicalunit}[1]{\mbox{\lexicalunit{#1}}}
 
  
 
 
 
 \renewcommand{\root}[1]{ (#1) }
-\newcommand{\scientificname}[1]{\textit{#1}} 
-\newcommand{\note}[1]{#1} 
-% \newcommand{\higha}{{{{a}}}}
-% \newcommand{\highe}{{{{e}}}}
-% \newcommand{\highE}{{{{ɛ}}}}
-% \newcommand{\highI}{{{​{ɪ}}}}
-% \newcommand{\higho}{{{{o}}}}
-% \newcommand{\highu}{{{{u}}}}
+\newcommand{\scientificname}[1]{\textit{#1}. } 
+\newcommand{\note}[1]{#1 }  
 
-\newcommand{\dicobox}[1]{\fbox{#1}}
+
+
+
+\newcommand{\dicobox}[1]{\medskip\parbox{.90\textwidth}{\par\smallskip\hangindent=6pt#1}\\\medskip}
+
+
+% \newcommand{\tablevspace}{\\[-.5em]}
+
+% \newcommand{\I}{\ipabar{i}{.5ex}{1}{}{}}
+\newcommand{\I}{\sout{{\i}}}
+\newcommand{\Í}{\sout{\'{\i}}}
+\newcommand{\Ì}{\sout{\`{\i}}}
+\newcommand{\Î}{\sout{\^{\i}}}
+\newcommand{\Ú}{\sout{Ú}}
+
+
+\newcommand{\noteseealso}[1]{See also \textit{#1}.}
+\newcommand{\notealsocalled}[1]{Also called \textit{#1}.}
+\newcommand{\notealsopronounced}[1]{Also pronounced as \textit{#1}. }
+\newcommand{\notefrom}[1]{From #1.}
+\newcommand{\notecompare}[1]{Compare with \textit{#1}.}
+
+\newcommand{\ETC}{etc}
+\newcommand{\SP}{sp}
+\newcommand{\SPP}{spp}

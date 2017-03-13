@@ -1,2 +1,211 @@
-subject terms to index
-oneperline
+ablative case
+accusative case
+active voice
+addition type of clause linking
+adjectival
+ATR
+adverbial clause
+adverb
+airstream mechanism
+alternative question
+ambitransitive
+anaphoric
+apposition
+archaic affix
+archiphoneme
+archimorpheme
+argument dropping
+aspect
+auxiliary verb
+boundary tone
+bound prononimal
+allomorphy
+causative
+certainty
+clause chaining
+clause combining
+clause structure
+cleft construction
+clitic
+clusivity
+color term
+common argument
+comparative construction
+complement
+copular	
+quotative
+similative
+complementation
+complementizer
+completive aspect
+agentive
+diminutive
+concessive clause
+conditional clause
+constituent order	
+main clause
+subordinate clause
+content question
+coordinating conjunction
+copula
+copula clause
+copulative case
+core argument
+dative
+de-affrication
+definiteness
+denominalization
+depressor consonant
+deverbalization
+devoicing
+dialect
+diminutive
+diphthong
+directional
+direct speech
+disjunction
+distributive adjectival
+distributive pronoun
+dominant suffix
+downdrift
+downstep
+dummy pronoun
+ejective
+epistemic qualification
+equative
+existential copula
+extended transitive
+filler particle
+fricative
+future time marking 
+gender
+general number
+genetic affiliation
+genitive case
+glottalic effect
+grammatical relation
+greetings
+haplology
+hypothetical clause
+iconicity
+ideophone
+imperative
+imperfective
+impersonal passive
+inchoative
+indefinite pronoun
+indirect speech
+infinitive
+instrumental case
+implosive
+intensification
+intentional
+interjection
+interrogative
+intonation
+intransitive
+irrealis mode
+kinship term
+lateral
+left-dislocation
+lexical causative
+long vowel
+manner clause
+marked accusative
+marked nominative
+medial clause
+metathesis
+middle voice
+modality
+mora
+motion verb
+narrative mood
+narrative text
+nasal assimilation
+nasal
+negation
+negating verb
+negative copula
+nominalization
+nominative case
+non-final deletion
+non-past tense
+non-spatial setting
+noun phrase
+number marking
+numeral system
+oblique case
+occupative aspect
+optative mood
+orthography
+particle
+passive
+sequential impersonal
+past tense
+patient
+person-marking
+pertensive
+phonological rule
+phonological word
+place assimilation
+pluractional aspect
+plurative
+polar question
+politeness strategy
+possessee
+possession
+possessor
+prefix
+preposition
+proclitic
+pro-drop
+progressive aspect
+occupative aspect
+prohibitive
+proper noun
+proverb
+purpose clause
+quantifier 
+quotative
+realis mode
+reason clause
+recessive clitic
+recessive suffix
+recipient
+reciprocal
+reduplication
+reflexive
+relative clause
+relative pronoun
+relational noun
+reported speech
+semi-vowel
+sequential aspect
+simultaneous aspect
+simultaneous clause
+singulative
+solicitive intonation
+speech-act participant
+split-accusativity
+stative adjectival
+subjunctive mood
+subordinate clause
+subordinating conjunction
+subtractive morphology
+suppletive form
+suprasegmental phonology
+syllable
+temporal clause
+tense
+tense clitic
+time expression
+allotone
+transitivity
+valence
+verbalization
+verbless clause
+voiceless vowel
+vowel assimilation
+devoiced
+voiceless vowel
+vowel harmony

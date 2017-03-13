@@ -40,6 +40,7 @@ cover: FORCE
 	convert main.pdf\[0\] -quality 100 -background white -alpha remove -bordercolor "#999999" -border 2  cover.png
 	cp cover.png googlebooks_frontcover.png
 	convert -geometry 50x50% cover.png covertwitter.png
+	convert main.pdf\[0\] -quality 100 -background white -alpha remove -bordercolor "#999999" -border 2  -resize x495 coveromp.png
 	display cover.png
  
 	
@@ -50,11 +51,23 @@ pod: bod createspace googlebooks
 bod: bod/bodcontent.pdf 
 
 bod/bodcontent.pdf: complete
-	sed "s/output=book/output=coverbod/" main.tex >bodcover.tex 
-	xelatex bodcover.tex  
-	xelatex bodcover.tex  
-	mv bodcover.pdf bod
-	./filluppages 4 main.pdf bod/bodcontent.pdf 
+	echo "creating cover for hardcover"
+	sed "s/output=book/output=coverbod/" main.tex >bodcoverHC.tex 
+	xelatex bodcoverHC.tex  
+	xelatex bodcoverHC.tex
+	echo "creating cover for softcover"
+	sed "s/output=book/output=coverbod/" main.tex >bodcoverSC.tex 
+	xelatex bodcoverSC.tex  
+	xelatex bodcoverSC.tex
+	echo "creating bookblock"
+	bash filluppages 4 main.pdf bodcontent.pdf 
+	echo "conforming files to pdf X/3"
+	gs -dPDFA -dBATCH -dNOPAUSE -dUseCIEColor -sProcessColorModel=DeviceCMYK -sDEVICE=pdfwrite -sPDFACompatibilityPolicy=1 -sOutputFile=Bookblock.pdf bodcontent.pdf
+	gs -dPDFA -dBATCH -dNOPAUSE -dUseCIEColor -sProcessColorModel=DeviceCMYK -sDEVICE=pdfwrite -sPDFACompatibilityPolicy=1 -sOutputFile=bod/coverHC.pdf bodcoverHC.pdf
+	gs -dPDFA -dBATCH -dNOPAUSE -dUseCIEColor -sProcessColorModel=DeviceCMYK -sDEVICE=pdfwrite -sPDFACompatibilityPolicy=1 -sOutputFile=bod/coverSC.pdf bodcoverSC.pdf
+	python bodxml.py 
+	
+	
 
 # prepare for submission to createspace
 createspace:  createspace/createspacecontent.pdf 
@@ -64,7 +77,7 @@ createspace/createspacecontent.pdf: complete
 	xelatex createspacecover.tex 
 	xelatex createspacecover.tex 
 	mv createspacecover.pdf createspace
-	./filluppages 1 main.pdf createspace/createspacecontent.pdf 
+	bash filluppages 1 main.pdf createspace/createspacecontent.pdf 
 
 googlebooks: googlebooks_interior.pdf
 
@@ -80,7 +93,16 @@ openreview.pdf: main.pdf
 
 proofreading: proofreading.pdf
 	
-
+paperhive: 
+	git branch gh-pages
+	git checkout gh-pages
+	git add proofreading.pdf versions.json
+	git commit -m 'prepare for proofreading' proofreading.pdf versions.json
+	git push origin gh-pages
+	git checkout master 
+	echo "langsci.github.io/BOOKID"
+	firefox https://paperhive.org/documents/new
+	
 proofreading.pdf: main.pdf
 	pdftk main.pdf multistamp prstamp.pdf output proofreading.pdf 
 
@@ -110,6 +132,10 @@ clean:
 	chapters/*aux chapters/*~ chapters/*.bak chapters/*.backup
 
 realclean: clean
-	rm -f *.dvi *.ps *.pdf 
+	rm -f *.dvi *.ps *.pdf
+
+chapterlist:
+	grep chapter main.toc|sed "s/.*numberline {[0-9]\+}\(.*\).newline.*/\\1/"
+ 
 
 FORCE:
