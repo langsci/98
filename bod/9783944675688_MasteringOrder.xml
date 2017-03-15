@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BoD>
+  <Header>
+    <FromCompany>Language Science Press</FromCompany>
+    <FromCompanyNumber>110275446</FromCompanyNumber>
+    <SentDate>20170315</SentDate>
+    <SentTime>11:42</SentTime>
+    <FromPerson>Sebastian Nordhoff</FromPerson>
+    <FromEmail>sebastian.nordhoff@langsci-press.org</FromEmail>
+  </Header>
+  <MasteringOrder>
+    <Product>
+      <MasteringType>Upload</MasteringType>
+      <EAN>9783944675688</EAN>
+      
+      <Contributor>
+        <ContributorRole>author</ContributorRole>
+        <ContributorName>Schrock, Terrill B.</ContributorName>
+        <ContributorShortBio>Terrill B. Schrock (1980) is an American field linguist who worked on the Ik language under SIL from 2008-2016. Prior linguistic experience included teaching English and studying Kazakh in Kazakhstan and working as an intern for a Russian-English translation company in the United States. He holds an MA in applied linguistics from the Graduate Institute of Applied Linguistics (2007) and a PhD in linguistics from Leiden University (2014). In addition to language description, Terrill engaged in orthography development, translation, and community development among the Ik people. </ContributorShortBio>
+      </Contributor>
+
+      
+      <Title>The Ik language</Title>
+      <Series>African Language Grammars and Dictionaries, Bd. 1</Series>
+      <EditionNumber>1</EditionNumber>
+      <PublicationDate>20170313</PublicationDate>
+      <Blurb>This book is a dictionary and grammar sketch of Ik, one of the three Kuliak (Rub) languages spoken in the beautiful Karamoja region of northeastern Uganda. It is the lexicographic sequel to "A grammar of Ik (Ice-tod): Northeast Uganda's last thriving Kuliak language" (Schrock 2014). The present volume includes an Ik-English dictionary with roughly 8,700 entries, followed by a reversed English-Ik index. These two main sections are then supplemented with an outline of Ik grammar that is comprehensive in its coverage of topics and written in a simple style, using standard linguistic terminology in a way that is accessible to interested non-linguists as well. This book may prove useful for language preservation and development among the Ik people, as a reference tool for non-Ik learners of the language, and as a source of data, not only for the comparative study of Kuliak but also the wider Afroasiatic and Nilo-Saharan language families. </Blurb>
+      <Height>240</Height>
+      <Width>170</Width>
+      <Pages>616</Pages>
+      <ColouredPages>1</ColouredPages>
+      <ColouredPagesPosition>3</ColouredPagesPosition>
+      
+      <Paper>white</Paper>
+      <Quality>Standard</Quality>
+      <Binding>PB</Binding>
+      
+      <Finish>matt</Finish>
+      <Language>eng</Language>
+      <Subject Scheme="BISAC">LAN009000</Subject>
+      <InternationalDistribution>Yes</InternationalDistribution>      
+      <Price>
+        <PriceValue>50.00</PriceValue>
+        <PriceCurrency>EUR</PriceCurrency>
+      </Price>
+      <Price>
+        <PriceValue>40.00</PriceValue>
+        <PriceCurrency>GBP</PriceCurrency>
+      </Price>
+      <Price>
+        <PriceValue>50.00</PriceValue>
+        <PriceCurrency>USD</PriceCurrency>
+      </Price>
+    </Product>
+  </MasteringOrder>
+</BoD>
